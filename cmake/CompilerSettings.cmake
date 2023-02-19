@@ -23,6 +23,7 @@ if (MSVC)
 elseif (CMAKE_CXX_COMPILER_ID MATCHES ".*Clang")
     add_compile_options (
         -Wall
+        -Werror
         -Wextra # reasonable and standard
         -Wshadow # warn the user if a variable declaration shadows one from a parent context
         -Wnon-virtual-dtor # warn the user if a class with virtual functions has a non-virtual destructor
